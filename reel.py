@@ -17,7 +17,7 @@ FONT = font.Font(family ="Times New Roman", size ="18", weight ="bold")
 def download(link):
     try:
         if (link):
-            SESSIONID = "18614737527%3ApTLwFoXv5BZohu%3A4"
+            SESSIONID = "{Session ID}"
             headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.74 Safari/537.36 Edg/79.0.309.43",
             "cookie":f'sessionid={SESSIONID};'
@@ -39,7 +39,7 @@ canvas.pack()
 frame=Frame(root,bg="white")
 frame.place(relwidth=1,relheight=1)
 
-background_image = ImageTk.PhotoImage(Image.open(r"C:\Users\ASUS\OneDrive\Desktop\Prof\copyassign\instareel\insta5.jpg"))
+background_image = ImageTk.PhotoImage(Image.open(r"{path}\img.jpg"))
 background_label = Label(frame, image = background_image)
 background_label.place(relx=-0.25,relwidth = 0.7, relheight =1)
 
